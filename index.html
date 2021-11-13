@@ -9,9 +9,72 @@
 
     <!--Estilos-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/s_themes.css">
 </head>
 <body>
     
+    <div class="container">
+        <div class="calculator">
+            <header>
+            <h1>calc</h1>
+            <div class="toggle3-switch">
+                <input type="radio" id="toggle3radio1" class=radio1 name="toggle3" checked/>
+                <input type="radio" id="toggle3radio2" class=radio2 name="toggle3"/>
+                <input type="radio" id="toggle3radio3" class=radio3 name="toggle3"/>
+                <div class=topLabelContainer>
+                  <label class=labelTop1 for="toggle3radio1">1
+                    </label><label class=labelTop2 for="toggle3radio2">2
+                    </label><label class=labelTop3 for="toggle3radio3">3</label>
+                </div>
+                <span class=labelLeft>THEME
+                  </span><span class=sliderContainer>
+                  <label class="label1" for="toggle3radio1"></label>
+                  <label class="label2" for="toggle3radio2"></label>
+                  <label class="label3" for="toggle3radio3"></label>
+                  <span class="slider"></span>
+                </span>
+              </div>
+            </header>
+
+            <main>
+                <section id="mostrar">
+                    <p>399,981</p>
+                </section>
+
+                <section id="digitar">
+                    <div class="botones">
+                        <!--Primer fila-->
+                        <button id="siete" class="boton">7</button>
+                        <button id="ocho" class="boton">8</button>
+                        <button id="nueve" class="boton">9</button>
+                        <button id="del" class="boton">DEL</button>
+
+                        <!--Segunda fila-->
+                        <button id="cuatro" class="boton">4</button>
+                        <button id="cinco" class="boton">5</button>
+                        <button id="seis" class="boton">6</button>
+                        <button id="mas" class="boton">+</button>
+
+                        <!--Tercer fila-->
+                        <button id="uno" class="boton">1</button>
+                        <button id="dos" class="boton">2</button>
+                        <button id="tres" class="boton">3</button>
+                        <button id="menos" class="boton">-</button>
+
+                        <!--Cuarta fila-->
+                        <button id="punto" class="boton">.</button>
+                        <button id="cero" class="boton">0</button>
+                        <button id="divdir" class="boton">/</button>
+                        <button id="multipli" class="boton">x</button>
+                    </div>
+                    <div class="botones-footer">
+                        <button id="reset" class="boton">Reset</button>
+                        <button id="igual" class="boton">=</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
 
 
     <script src="assets/js/app.js"></script>
