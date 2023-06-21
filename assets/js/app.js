@@ -1,4 +1,5 @@
 import {cambiar_tema} from "./themes.js";
+import {funcionalidadBotones} from './botonesFun.js'
 
 const container = document.querySelector('.container');
 const header = document.querySelector('header');
@@ -30,4 +31,10 @@ document.body.addEventListener('change', function(e){
             cambiar_tema('hsl(268, 75%, 9%)','hsl(268, 71%, 12%)','hsl(268, 71%, 12%)','hsl(281, 89%, 26%)','hsl(285, 91%, 52%)','hsl(176, 100%, 44%)','hsl(177, 92%, 70%)','hsl(268, 47%, 21%)','hsl(290, 70%, 36%)','hsl(52, 100%, 62%)',container,header,mostrar,todos_botones,boton,del,reset,igual,labels,slider)
             break;
     }
+})
+
+boton.forEach(bot => {
+    bot.addEventListener('click', () => {
+        funcionalidadBotones(bot, mostrar)
+    })
 })
